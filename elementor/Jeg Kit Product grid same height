@@ -1,0 +1,84 @@
+/* UNIVERSAL: force product image blocks to equal height and cover images */
+/* Broad selectors to catch jeg kit variants, woo classes, and custom wrappers */
+.jeg-elementor-kit .jeg_product,
+.jeg-elementor-kit .product,
+.jeg-elementor-kit .jeg_product_thumbnail_container,
+.jeg-elementor-kit .jeg_product_image,
+.jeg-elementor-kit .jeg-elementor-kit-product-image,
+.jeg-elementor-kit .product-thumbnail,
+.jeg-elementor-kit .woocommerce-loop-product__link,
+.jeg-elementor-kit .woocommerce-loop-product__link .wp-post-image,
+.product .product-thumbnail,
+.product .product-image,
+.product .woocommerce-loop-product__link,
+.rkit-product-image,
+.rkit-product-thumbnail {
+  box-sizing: border-box !important;
+}
+
+/* container fixed heights per breakpoint */
+.jeg-elementor-kit .jeg_product_thumbnail_container,
+.jeg-elementor-kit .jeg_product_image,
+.jeg-elementor-kit .jeg-elementor-kit-product-image,
+.jeg-elementor-kit .product-thumbnail,
+.rkit-product-image,
+.rkit-product-thumbnail,
+.product .product-thumbnail,
+.product .product-image {
+  height: 230px !important; /* desktop default — change if you want */
+  max-height: 230px !important;
+  overflow: hidden !important;
+  display: block !important;
+  position: relative !important;
+}
+
+/* for <img> elements: fill and crop */
+.jeg-elementor-kit img.wp -post-image,
+.jeg-elementor-kit .jeg_product_image img,
+.jeg-elementor-kit .jeg-product-thumbnail img,
+.jeg-elementor-kit .jeg-elementor-kit-product-image img,
+.jeg-elementor-kit .woocommerce-loop-product__link img,
+.jeg-elementor-kit .product-thumbnail img,
+img.wp -post-image,
+.rkit-product-image img,
+.rkit-product-thumbnail img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* for elements that use background-image instead of <img> */
+.jeg-elementor-kit .jeg_product_image[data-bg],
+.jeg-elementor-kit .jeg-product-thumbnail[data-bg],
+.jeg-elementor-kit .product-thumbnail[data-bg],
+.jeg-elementor-kit .product .image[data-bg],
+.rkit-product-image[data-bg],
+[jeg-bg],
+[style*="background-image"] {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 230px !important;
+}
+
+/* responsive heights */
+@media (max-width:1024px){
+  .jeg-elementor-kit .jeg_product_thumbnail_container,
+  .jeg-elementor-kit .jeg_product_image,
+  .product .product-thumbnail,
+  .rkit-product-image {
+    height: 180px !important;
+    max-height: 180px !important;
+  }
+}
+@media (max-width:767px){
+  .jeg-elementor-kit .jeg_product_thumbnail_container,
+  .jeg-elementor-kit .jeg_product_image,
+  .product .product-thumbnail,
+  .rkit-product-image {
+    height: 140px !important;
+    max-height: 140px !important;
+  }
+}
