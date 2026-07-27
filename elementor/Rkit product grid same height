@@ -1,0 +1,7 @@
+selector .rkit-product-title-wpg{
+     display: -webkit-box;
+  -webkit-line-clamp: 2; /* 2line limitation */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
