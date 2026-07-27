@@ -1,0 +1,17 @@
+selector{
+    background: rgba(255, 255, 255, 0.65) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 0 0 18px 18px;
+}
+
+selector img{
+    max-width: 120px;
+    transition: every 0.35s ease;
+}
+
+.elementor-sticky--effects img{
+    max-width: 80px !important;
+}
