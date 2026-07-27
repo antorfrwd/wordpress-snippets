@@ -1,0 +1,13 @@
+.elementor-1801 .elementor-element.elementor-element-6d6f50d .elementskit-post-image-card {
+    display: block;
+    height: 96%;
+   
+}
+.ekit-wid-con .elementskit-post-image-card .elementskit-entry-header .elementskit-entry-thumb>img {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+  
+}
